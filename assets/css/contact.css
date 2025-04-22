@@ -1,0 +1,33 @@
+.contact-info {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+  
+  .contact-info i {
+    width: 24px;
+    min-width: 24px;
+  }
+  
+  .bg-white {
+    background-color: #fff;
+  }
+  
+  .shadow-sm {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.07);
+  }
+  
+  .section-heading em {
+    color: #a4c639;
+    font-style: normal;
+  }
+  
+  @media (max-width: 767px) {
+    .callback-form, .contact-info {
+      padding: 30px 20px !important;
+    }
+  
+    .section-heading h2 {
+      font-size: 22px;
+    }
+  }
+  
