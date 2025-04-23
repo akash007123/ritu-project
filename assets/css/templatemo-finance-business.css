@@ -1374,3 +1374,248 @@ footer .contact-form button.filled-button:hover {
 		border-bottom: none!important;
 	}
 }
+
+
+.last:hover{
+	color: #9f62e4;
+	font-weight: bold;
+}
+
+.mega-menu {
+    width: 600px;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #ffffff, #f6f6f6);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+
+.menu-container {
+    padding: 10px;
+}
+
+.menu-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.mega-item {
+    display: flex;
+    align-items: center;
+    width: 48%;
+    padding: 15px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: #333;
+}
+
+.mega-item:hover {
+    background: #a4c639;
+    color: white;
+    transform: translateY(-3px);
+    text-decoration: none;
+}
+
+.icon-box {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(164, 198, 57, 0.1);
+    border-radius: 12px;
+    margin-right: 15px;
+}
+
+.mega-item:hover .icon-box {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.icon-box i {
+    font-size: 20px;
+    color: #a4c639;
+}
+
+.mega-item:hover .icon-box i {
+    color: white;
+}
+
+.menu-content h5 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.menu-content p {
+    margin: 5px 0 0;
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.view-all {
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.all-services {
+    color: #a4c639;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.all-services:hover {
+    color: #86a12e;
+    text-decoration: none;
+}
+
+.all-services i {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.all-services:hover i {
+    transform: translateX(5px);
+}
+
+/* Animation for dropdown appearance */
+.dropdown:hover .mega-menu {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Navbar icon styling */
+.nav-link i {
+    margin-right: 5px;
+}
+
+/* Make dropdown work on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* Add overlay to make text more readable */
+.img-fill::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0.5) 50%,
+        rgba(0, 0, 0, 0.7) 100%
+    );
+    z-index: 1;
+}
+
+/* Enhance text styles for better visibility */
+.text-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+.text-content h6 {
+    color: #a4c639;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text-content h4 {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.text-content p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+}
+
+/* Enhance button visibility */
+.filled-button {
+    background-color: #a4c639;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 30px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: 2px solid #a4c639;
+    text-shadow: none;
+}
+
+.filled-button:hover {
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+    text-decoration: none;
+}
+
+/* Enhance shine effect with adjusted opacity */
+.shine-effect {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: skewX(-25deg);
+    animation: shine 5s infinite;
+    z-index: 2;
+}
+
+/* Optional: Add a subtle vignette effect */
+.img-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+        circle at center,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.3) 100%
+    );
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Ensure Modern-Slider has proper positioning */
+.Modern-Slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.item {
+    position: relative;
+}
