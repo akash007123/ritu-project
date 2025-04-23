@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
     <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
   </head>
@@ -31,15 +33,15 @@
           <div class="col-md-8 col-xs-12">
             <ul class="left-info">
               <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Fri 09:00-05:00</a></li>
-              <li><a href="#"><i class="fa fa-phone"></i>090-080-0760</a></li>
+              <li><a href="#"><i class="fa fa-phone"></i>+91-9999999999</a></li>
             </ul>
           </div>
           <div class="col-md-4">
             <ul class="right-icons">
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="#"><i class="fa fa-behance"></i></a></li>
+              <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+              <li><a href="#"><i class="bi bi-twitter-x"></i></a></li>
+              <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+              <li><a href="#"><i class="bi bi-behance"></i></a></li>
             </ul>
           </div>
         </div>
@@ -298,9 +300,9 @@
     <section class="contact-us">
       <div class="container">
         <div class="row g-5 align-items-stretch">
-    
+    <div class="col-lg-2 col-md-2"></div>
           <!-- Left: Contact Form -->
-          <div class="col-lg-6">
+          <div class="col-lg-8 col-md-8">
             <div class="callback-form h-100 d-flex flex-column justify-content-center">
               <div class="section-heading text-start mb-4">
                 <h2>Request a <em>Call Back</em></h2>
@@ -329,9 +331,9 @@
               </div>
             </div>
           </div>
-    
+    <div class="col-lg-2 col-md-2"></div>
           <!-- Right: Contact Details -->
-          <div class="col-lg-6">
+          <!-- <div class="col-lg-6">
             <div class="contact-info p-4 h-100 d-flex flex-column justify-content-center rounded  bg-white">
               <h4 class="mb-4 text-success">Contact Information</h4>
               <ul class="list-unstyled">
@@ -365,7 +367,7 @@
                 </li>
               </ul>
             </div>
-          </div>
+          </div> -->
     
         </div>
       </div>
@@ -415,10 +417,10 @@
             <h4>Finance Business</h4>
             <p>Vivamus tellus mi. Nulla ne cursus elit,vulputate. Sed ne cursus augue hasellus lacinia sapien vitae.</p>
             <ul class="social-icons">
-              <li><a rel="nofollow" href="https://fb.com/templatemo" target="_blank"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="#"><i class="fa fa-behance"></i></a></li>
+              <li><a href="#" ><i class="bi bi-facebook"></i></a></li>
+              <li><a href="#"><i class="bi bi-twitter-x"></i></a></li>
+              <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+              <li><a href="#"><i class="bi bi-behance"></i></a></li>
             </ul>
           </div>
           <div class="col-md-3 footer-item">
@@ -478,7 +480,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <p>Copyright &copy; 2020 Financial Business Co., Ltd.
+            <p>Copyright &copy; 2025 Financial.
             
             - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
           </div>
@@ -486,22 +488,19 @@
       </div>
     </div>
 
-    <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Additional Scripts -->
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/owl.js"></script>
     <script src="assets/js/slick.js"></script>
     <script src="assets/js/accordions.js"></script>
 
     <script language = "text/Javascript"> 
-      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
-      function clearField(t){                   //declaring the array outside of the
-      if(! cleared[t.id]){                      // function makes it static and global
-          cleared[t.id] = 1;  // you could use true and false, but that's more typing
-          t.value='';         // with more chance of typos
+      cleared[0] = cleared[1] = cleared[2] = 0; 
+      function clearField(t){                  
+      if(! cleared[t.id]){                      
+          cleared[t.id] = 1; 
+          t.value='';         
           t.style.color='#fff';
           }
       }
