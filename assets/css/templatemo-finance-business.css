@@ -689,7 +689,68 @@ ul.slick-dots {
 }
 
 
+.content-box {
+	display: flex;
+	align-items: flex-start;
+	background: #fff;
+	border-radius: 8px;
+	padding: 20px;
+	/* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); */
+	border-left: 5px solid #a4c639;
+	max-width: 700px;
+	margin: auto;
+	margin-bottom: 20px;
 
+  }
+
+  .circle-check-list {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 50px 20px;
+  }
+
+  .circle-check-list li {
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+	font-size: 16px;
+	color: #333;
+  }
+
+  .circle-check-list i {
+	background-color: #a4c639; 
+	color: #fff;
+	border-radius: 50%;
+	padding: 6px;
+	font-size: 12px;
+	margin-right: 10px;
+	width: 24px;
+	height: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+
+  .content-text {
+	margin-left: 15px;
+	color: #555;
+	font-size: 14px;
+	line-height: 1.6;
+  }
+
+  @media (max-width: 600px) {
+	.content-box {
+	  flex-direction: column;
+	  padding: 15px;
+	}
+
+	.content-text {
+	  margin-left: 0;
+	  margin-top: 10px;
+	}
+  }
+
+  
 
 .more-info {
 	margin-top: 140px;
@@ -1094,28 +1155,45 @@ footer .contact-form button.filled-button:hover {
 
 .page-heading {
 	text-align: center;
-	background-image: url(../image/5.jpg);
+	background-image: url(../image/about1.avif);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 230px 0px 150px 0px;
+	padding: 180px 0px 250px 0px;
 	color: #fff;
 }
 
 .page-heading h1 {
 	text-transform: capitalize;
-	font-size: 36px;
+	font-size: 26px;
 	font-weight: 700;
 	letter-spacing: 2px;
 	margin-bottom: 18px;
 }
 
 .page-heading span {
-	font-size: 15px;
+	font-size: 3em;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: #fff;
 	display: block;
+	font-weight: bold;
+	letter-spacing: 0.3em;
+}
+
+.page-heading p {
+	font-size: 1.2em;
+	color: #fff;
+}
+
+
+@media (max-width: 480px) {
+	.page-heading h1 {
+		font-size: 20px;
+	}
+	.page-heading span {
+		font-size: 2em;
+	}
 }
 
 
@@ -1483,21 +1561,14 @@ footer .contact-form button.filled-button:hover {
     transform: translateX(5px);
 }
 
-/* Animation for dropdown appearance */
-.dropdown:hover .mega-menu {
-    transform: translateY(0);
-    opacity: 1;
-}
+
 
 /* Navbar icon styling */
 .nav-link i {
     margin-right: 5px;
 }
 
-/* Make dropdown work on hover */
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
+
 
 
 /* Add overlay to make text more readable */
